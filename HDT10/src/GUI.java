@@ -166,7 +166,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void visualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visualizarActionPerformed
         // TODO add your handling code here:
-        base.generarGrafo();
+        base.crearNodos();
     }//GEN-LAST:event_visualizarActionPerformed
 
     private void nodoNuevo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nodoNuevo1ActionPerformed
@@ -185,7 +185,7 @@ public class GUI extends javax.swing.JFrame {
         
         nod1 = nodo1.getText();
         nod2 = nodo2.getText();
-        base.agregarRelacion(arista,"aa", "ss");
+        base.agregarRelacion(arista,nod1, nod2);
     }//GEN-LAST:event_guardarRelacionActionPerformed
 
     /**
