@@ -1,3 +1,7 @@
+
+import org.graphstream.graph.Graph;
+import org.graphstream.graph.implementations.SingleGraph;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,6 +13,7 @@
  * @author Marlon
  */
 public class GUI extends javax.swing.JFrame {
+    Graph grafo = new SingleGraph("a");
     Base base;
     String nodoNuevo;
     String nod1;
@@ -60,6 +65,11 @@ public class GUI extends javax.swing.JFrame {
         });
 
         seisCorreos.setText("b) Mas de Seis Correos");
+        seisCorreos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seisCorreosActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Nodo Nuevo:");
 
@@ -182,11 +192,16 @@ public class GUI extends javax.swing.JFrame {
 
     private void guardarRelacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarRelacionActionPerformed
         // TODO add your handling code here:
-        
+        int numero = 1;
         nod1 = nodo1.getText();
         nod2 = nodo2.getText();
-        base.agregarRelacion(arista,nod1, nod2);
+        
+        grafo.addEdge("nuevo",nod1, nod2);
     }//GEN-LAST:event_guardarRelacionActionPerformed
+
+    private void seisCorreosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seisCorreosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_seisCorreosActionPerformed
 
     /**
      * @param args the command line arguments

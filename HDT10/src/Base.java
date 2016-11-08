@@ -99,6 +99,68 @@ public class Base {
               graph.addNode(per13);
               graph.addNode(per14);
               
+              graph.addEdge("anexo", per1, per2);
+          graph.addEdge("anexo1", per1, per3);
+          graph.addEdge("anexo2", per1, per9);
+          graph.addEdge("anexo3", per1, per14);
+          graph.addEdge("anexo5", per2, per3);
+          graph.addEdge("anexo6", per2, per4);
+          graph.addEdge("anexo7", per2, per12);
+          graph.addEdge("anexo9", per3, per4);
+          graph.addEdge("anexo10", per4, per5);
+          graph.addEdge("anexo11", per4, per6);
+          graph.addEdge("anexo12", per4, per11);
+          graph.addEdge("anexo13", per4, per13);
+          graph.addEdge("anexo14", per4, per14);
+          graph.addEdge("anexo16", per5, per6);
+          graph.addEdge("anexo17", per5, per11);
+          graph.addEdge("anexo18", per5, per12);
+          graph.addEdge("anexo19", per5, per13);
+          graph.addEdge("anexo20", per5, per14);
+          
+          graph.addEdge("anexo21", per6, per2);
+
+          graph.addEdge("anexo23", per6, per12);
+          graph.addEdge("anexo24", per6, per13);
+          
+          graph.addEdge("anexo25", per7, per8);
+          graph.addEdge("anexo26", per7, per9);
+          graph.addEdge("anexo27", per7, per11);
+          
+          graph.addEdge("anexo28", per8, per6);
+
+          graph.addEdge("anexo30", per8, per9);
+          graph.addEdge("anexo31", per8, per10);
+          
+          graph.addEdge("anexo32", per9, per5);
+
+          graph.addEdge("anexo34", per9, per10);
+          
+          graph.addEdge("anexo35", per10, per4);
+          graph.addEdge("anexo36", per10, per5);
+          graph.addEdge("anexo37", per10, per6);
+          graph.addEdge("anexo38", per10, per7);
+          graph.addEdge("anexo39", per10, per11);
+          graph.addEdge("anexo40", per10, per12);
+          graph.addEdge("anexo41", per10, per13);
+          graph.addEdge("anexo42", per10, per14);
+          
+
+          graph.addEdge("anexo44", per11, per6);
+
+          graph.addEdge("anexo46", per11, per13);
+          graph.addEdge("anexo47", per11, per14);
+          
+          graph.addEdge("anexo48", per12, per4);
+
+          graph.addEdge("anexo52", per12, per11);
+          graph.addEdge("anexo53", per12, per13);
+          graph.addEdge("anexo54", per12, per14);
+          
+          
+              
+              
+              
          graph.display();
       
     
